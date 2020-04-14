@@ -1,3 +1,4 @@
+import datetime
 from typing import List
 
 class Bin():
@@ -20,7 +21,7 @@ class User():
         self.student_num = student_num
 
 class Log():
-    def __init__ (self, time: str, user_id: int, part_id: int, quantity: int):
+    def __init__ (self, time: datetime, user_id: int, part_id: int, quantity: int):
         self.time = time
         self.user_id = user_id
         self.part_id = part_id
