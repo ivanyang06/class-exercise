@@ -13,8 +13,18 @@ class Person():
 
     def punch(self, person):
         person.health_points -= 10
+    
+    def eat(self):
+        self.health_points = 100
+
 george = Person("george", 69, 0, 10)
 david = Person("david", 99999, -1, 11)
 
+print(george)
+print(david)
+
+print(george.introduce())
+print(david.introduce())
+
 george.punch(david)
-print(david.health_points)
+david.punch(david)
